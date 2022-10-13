@@ -58,8 +58,11 @@ header .ms-nav-icons{
 ----------------*/
 aside{
     width: 4.375rem;
-    flex-shrink: 0;
     background-image: url("../img/sidebar-bg.png");
+}
+
+aside .ms-aside-icon button{
+
 }
 
 @media screen and (min-width: 992px) {
