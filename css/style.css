@@ -59,6 +59,7 @@ header .ms-nav-icons{
 aside{
     width: 4.375rem;
     flex-shrink: 0;
+    background-image: url("../img/sidebar-bg.png");
 }
 
 @media screen and (min-width: 992px) {
@@ -84,7 +85,6 @@ main {
     DEBUG 
 ----------------*/
 .ms-debug aside{
-    background-color: black;
 }
 
 .ms-debug .ms-page-container{
