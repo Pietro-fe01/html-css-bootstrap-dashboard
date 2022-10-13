@@ -4,3 +4,49 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
+
+/*---------------
+    MAIN-CONTENT 
+----------------*/
+.ms-page-container{
+    height: calc(100vh - 4.375rem);
+    display: flex;
+}
+
+/*---------------
+    HEADER 
+----------------*/
+header {
+    height: 4.375rem;
+}
+
+/*---------------
+    ASIDE 
+----------------*/
+aside{
+    width: 4.375rem;
+    flex-shrink: 0;
+}
+
+/*---------------
+    MAIN 
+----------------*/
+main {
+    overflow-y: auto;
+    flex-grow: 1;
+}
+
+/*---------------
+    DEBUG 
+----------------*/
+.ms-debug header{
+    background-color: #f8f9fa;
+}
+
+.ms-debug aside{
+    background-color: black;
+}
+
+.ms-debug .ms-page-container{
+    background-color: red;
+}
