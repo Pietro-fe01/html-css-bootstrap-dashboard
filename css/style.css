@@ -1,4 +1,5 @@
- @import url("variables.css");
+@import url("variables.css");
+@import url("utilities.css");
 
 /*---------------
     TYPOGRAPHY 
@@ -46,12 +47,29 @@ header .ms-nav-icons{
     width: 3.125rem;
 }
 
+@media screen and (min-width: 992px) {
+    header .ms-nav-icons{
+        width: 200px;
+    }
+}
+
 /*---------------
     ASIDE 
 ----------------*/
 aside{
     width: 4.375rem;
     flex-shrink: 0;
+}
+
+@media screen and (min-width: 992px) {
+    aside{
+        width: 130px;
+    }
+}
+@media screen and (min-width: 1400px) {
+    aside{
+        width: 140px;
+    }
 }
 
 /*---------------
@@ -73,7 +91,7 @@ main {
     background-color: red;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 450px) {
     /* creata media query provvisoria solo per
     avere il breakpoint su ispeziona sito */
 }

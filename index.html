@@ -25,15 +25,16 @@
                 <!-- Logo pagina -->
                 <div class="ms-logo d-flex justify-content-center">
                     <a href="#">
-                        <img src="img/mobile-logo.png" alt="">
+                        <img class="d-block d-lg-none" src="img/mobile-logo.png" alt="">
+                        <img class="d-none d-lg-block ps-lg-3" id="ms-w-100" src="img/logo.svg" alt="">
                     </a>
                 </div>
                 <!-- /Logo pagina -->
 
                 <!-- Search bar  -->
-                <div class="ms-search-bar input-group rounded">
+                <div class="ms-search-bar rounded ms-4 ms-lg-5 input-group">
                     <span class="input-group-text px-2" id="search-addon" style="background-color: var(--ms-search-bg);">
-                        <i class="me-sm-2 fas fa-search"></i>
+                        <i class="me-2 fas fa-search"></i>
                         <input class="border-0" style="background-color: var(--ms-search-bg);" type="search" class="form-control rounded" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search" aria-describedby="search-addon" />
                     </span>
                 </div>
@@ -42,10 +43,25 @@
                 <!-- Navigation bar icons right  -->
                 <div class="ms-nav-icons d-flex justify-content-center">
                     <nav>
-                        <ul class="p-0 m-0 ms-2">
-                            <li class="list-unstyled">
+                        <ul class="row p-0 m-0 ms-2">
+                            <li class="col-lg-3 list-unstyled d-none d-lg-block">
+                                <a href="#" style="color: var(--ms-nav-icons-color);">
+                                    <i class="fa-solid fa-list"></i>
+                                </a>
+                            </li>
+                            <li class="col-lg-3 list-unstyled d-none d-lg-block">
                                 <a href="#">
-                                    <i class="fa-solid fa-bell" style="color: var(--ms-bell-color);"></i>
+                                    <i class="fa-regular fa-circle-question rounded-circle text-white" style="background-color: var(--ms-nav-icons-color);"></i>
+                                </a>
+                            </li>
+                            <li class="col-lg-3 list-unstyled d-none d-lg-block">
+                                <a href="#" style="color: var(--ms-nav-icons-color);">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </a>
+                            </li>
+                            <li class="col-lg-3 list-unstyled">
+                                <a href="#" style="color: var(--ms-bell-color);">
+                                    <i class="fa-solid fa-bell"></i>
                                 </a>
                             </li>
                         </ul>
