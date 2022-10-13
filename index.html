@@ -19,7 +19,27 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body class="ms-debug">
-        <header></header>
+        <header class="d-flex align-items-center">
+            <div class="ms-logo d-flex justify-content-center">
+                <a href="#">
+                    <img src="img/mobile-logo.png" alt="">
+                </a>
+            </div>
+            <div class="ms-search-bar flex-grow-1">
+                <input type="search" placeholder="Prova a cercare: Lezioni di Laravel" class="border-0 px-2 rounded" style="background-color: var(--ms-search-bg);">
+            </div>
+            <div class="ms-nav-icons d-flex justify-content-center">
+                <nav>
+                    <ul class="p-0 m-0">
+                        <li class="list-unstyled">
+                            <a href="#">
+                                <i class="fa-solid fa-bell" style="color: var(--ms-bell-color);"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
         <div class="ms-page-container">
             <aside></aside>
