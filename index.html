@@ -44,26 +44,47 @@
                 <div class="ms-nav-icons d-flex justify-content-center">
                     <nav>
                         <ul class="row p-0 m-0 ms-2">
+                            <!-- Menu a lista icon -->
                             <li class="col-lg-3 list-unstyled d-none d-lg-block">
                                 <a href="#" style="color: var(--ms-nav-icons-color);">
                                     <i class="fa-solid fa-list"></i>
                                 </a>
                             </li>
+                            <!-- /Menu a lista icon -->
+
+                            <!-- Punto interrogativo icon -->
                             <li class="col-lg-3 list-unstyled d-none d-lg-block">
                                 <a href="#">
                                     <i class="fa-regular fa-circle-question rounded-circle text-white" style="background-color: var(--ms-nav-icons-color);"></i>
                                 </a>
                             </li>
+                            <!-- /Punto interrogativo icon -->
+
+                            <!-- Menu a tre puntini verticale -->
                             <li class="col-lg-3 list-unstyled d-none d-lg-block">
                                 <a href="#" style="color: var(--ms-nav-icons-color);">
                                     <i class="fa-solid fa-ellipsis-vertical"></i>
                                 </a>
                             </li>
+                            <!-- /Menu a tre puntini verticale -->
+
+                            <!-- Campanello icon -->
                             <li class="col-lg-3 list-unstyled">
-                                <a href="#" style="color: var(--ms-bell-color);">
+                                <!-- <a href="#" style="color: var(--ms-bell-color);">
                                     <i class="fa-solid fa-bell"></i>
-                                </a>
+                                </a> -->
+                                <div class="dropdown" id="ms-campanello">
+                                    <button class="m-0 p-0 btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      <i class="fa-solid fa-bell" style="color: var(--ms-bell-color);"></i>
+                                    </button>
+                                    <ul class="dropdown-menu" style="">
+                                      <li><a class="dropdown-item" href="#">Action</a></li>
+                                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
                             </li>
+                            <!-- /Campanello icon -->
                         </ul>
                     </nav>
                 </div>
@@ -161,7 +182,38 @@
                     <div class="col-12 col-lg-8 pt-3">
                         <div class="card text-bg-light mb-3">
                             <!-- Card header -->
-                            <div class="card-header fw-bold">Prossime classi</div>
+                            <div class="card-header fw-bold d-flex justify-content-between align-items-center">
+                                <span>Prossime classi</span>
+
+                                <!-- Pulsante "+" per aggiungere una classe -->
+                                <button class="btn border-primary text-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                                <!-- Pulsante "+" per aggiungere una classe -->
+                            </div>
+
+                                <!-- Codice che apre la OffCanvas -->
+                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title" id="offcanvasRightLabel">
+                                            Aggiungi Classe
+                                        </h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <!-- primo input -->
+                                        <div>Nome</div>
+                                        <input type="text" />
+                                        <!-- primo input -->
+                                        
+                                        <!-- secondo input -->
+                                        <div>Data inizio</div>
+                                        <input type="date" />
+                                        <!-- secondo input -->
+                                    </div>
+                                </div>
+                                <!-- /Codice che apre la OffCanvas -->
+
                             <!-- /Card header -->
 
                             <!-- Contenuto card uno -->
