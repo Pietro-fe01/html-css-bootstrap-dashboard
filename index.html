@@ -77,7 +77,7 @@
                 <!-- Aside-top -->
                 <div class="ms-aside-top">
                     <!-- House Icon -->
-                    <div class="ms-aside-icon pb-2">
+                    <div class="ms-aside-icon pb-1">
                         <button class="btn p-1 px-2 ms-aside-icon text-white d-lg-flex align-items-baseline">
                             <i class="me-lg-2 fa-solid fa-house"></i>
                             <span class="d-none d-lg-block">Home</span>
@@ -86,7 +86,7 @@
                     <!-- /House Icon -->
 
                     <!-- Graphic icon -->
-                    <div class="ms-aside-icon pb-2">
+                    <div class="ms-aside-icon pb-1">
                         <button class="btn p-1 px-2 ms-aside-icon text-white d-lg-flex align-items-baseline">
                             <i class="me-lg-2 fa-solid fa-chart-simple"></i>
                             <span class="d-none d-lg-block">Stats</span>
@@ -95,7 +95,7 @@
                     <!-- /Graphic icon -->
 
                     <!-- Signal icon -->
-                    <div class="ms-aside-icon pb-2">
+                    <div class="ms-aside-icon pb-1">
                         <button class="btn p-1 px-2 ms-aside-icon text-white d-lg-flex align-items-baseline">
                             <i class="me-lg-2 fa-solid fa-signal"></i>
                             <span class="d-none d-lg-block">Signals</span>
@@ -123,25 +123,33 @@
             <!-- DASHBOARD -->
             <main class="ms-dashboard text-white">
                 <!-- Dashboard top - blue -->
-                <div class="ms-dashboard__top row m-0 py-3">
+                <div class="ms-dashboard__top row m-0 pt-4 pb-2 py-lg-3">
                     <!-- prima colonna -->
-                    <div class="col-12 pb-2 mb-3">
-                        <div>
-                            <h1 class="d-inline-block mb-1">Boolean</h1>
+                    <div class="col-12 col-lg-8 mb-4">
+                        <!-- Parte top della prima colonna -->
+                        <div class="mb-2">
+                            <h2 class="d-inline-block mb-1">Boolean</h2>
                             <span class="badge rounded-pill ms-1">Piano Blaze</span>
                         </div>
+                        <!-- /Parte top della prima colonna -->
+
+                        <!-- /Parte top della prima colonna -->
                         <span class="badge rounded-pill">3 app</span>
-                        <i class="fa-solid fa-angles-right"></i>
-                        <span class="badge rounded-pill ms-1">
+                        <i class="mx-1 fa-solid fa-angles-right"></i>
+                        <span class="badge rounded-pill d-lg-none">
                             <i class="fa-solid fa-plus"></i>
                         </span>
+                        <span class="badge rounded-pill d-none d-lg-inline-block">Boolean mobile app</span>
+                        <span class="badge rounded-pill d-none d-lg-inline-block">Boolean web app</span>
+                        <span class="badge rounded-pill d-none d-lg-inline-block">Boolean blog app</span>
+                        <!-- /Parte top della prima colonna -->
                     </div>
                     <!-- /prima colonna -->
 
                     <!-- Seconda colonna -->
-                    <div class="col-12 pb-2">
-                        <p class="mb-2 fw-bold">Studenti online negli ultimi 30 minuti</p class="mb-0">
-                        <span class="fs-1">125</span>
+                    <div class="col-12 col-lg-4 align-self-center">
+                        <p id="ms-online-stud" class="mb-2">Studenti online negli ultimi 30 minuti</p>
+                        <span id="ms-online-stud__num">125</span>
                     </div>
                     <!-- /Seconda colonna -->
                 </div>
