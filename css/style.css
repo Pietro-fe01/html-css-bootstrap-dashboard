@@ -50,3 +50,8 @@ main {
 .ms-debug .ms-page-container{
     background-color: red;
 }
+
+@media screen and (min-width: 400px) {
+    /* creata media query provvisoria solo per
+    avere il breakpoint su ispeziona sito */
+}
