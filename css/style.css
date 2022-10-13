@@ -9,14 +9,6 @@ body{
 }
 
 /*---------------
-  PAGE CONTAINER
-----------------*/
-.ms-page-container{
-    height: calc(100vh - 4.375rem);
-    display: flex;
-}
-
-/*---------------
     HEADER 
 ----------------*/
 header {
@@ -51,6 +43,15 @@ header .ms-nav-icons{
     header .ms-nav-icons{
         width: 200px;
     }
+}
+
+/*---------------
+  PAGE CONTAINER
+----------------*/
+.ms-page-container{
+    height: calc(100vh - 4.375rem);
+    display: flex;
+    background-color: #f8f9fa;
 }
 
 /*---------------
@@ -109,14 +110,18 @@ MAIN DASHBOARD TOP
     }
 }
 
+/*--------------------
+MAIN DASHBOARD BOTTOM
+----------------------*/
+.prova{
+    background-color: red;
+    border: 1px solid;
+    height: 200px;
+}
 
 /*---------------
     DEBUG 
 ----------------*/
-.ms-debug .ms-page-container{
-    background-color: red;
-}
-
 @media screen and (min-width: 450px) {
     /* creata media query provvisoria solo per
     avere il breakpoint su ispeziona sito */
