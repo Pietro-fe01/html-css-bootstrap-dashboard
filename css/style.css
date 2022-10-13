@@ -84,12 +84,24 @@ main {
     flex-grow: 1;
 }
 
+/*------------------
+MAIN DASHBOARD TOP
+--------------------*/
+.ms-dashboard__top{
+    background-color: #1c72e8;
+}
+
+.ms-dashboard__top .badge{
+    background-color: #155ccc;
+}
+
+.ms-dashboard__top i{
+    font-size: .625rem;
+}
+
 /*---------------
     DEBUG 
 ----------------*/
-.ms-debug aside{
-}
-
 .ms-debug .ms-page-container{
     background-color: red;
 }
