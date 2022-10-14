@@ -113,36 +113,44 @@ MAIN DASHBOARD TOP
 /*--------------------
 MAIN DASHBOARD BOTTOM
 ----------------------*/
-.ms-dashboard__bottom .card-body{
-    font-size: 14px;
-}
-
-.ms-dashboard__bottom .ms-dash-element img{
+.card-body table img{
     width: 30px;
 }
 
-.ms-dashboard__bottom .card-body .fa-pencil,
-.ms-dashboard__bottom .card-body .fa-trash{
+.card-body table .fa-pencil,
+.card-body table .fa-trash{
     border: 1px solid #6c757d;
     color: #6c757d;
-    padding: 5px;
+    padding: 3px;
     border-radius: 5px;
 }
 
-.card-body:nth-child(1n){
-    border-top: 0.5px solid #dee2e6;
+.ms-table-date,
+.ms-table-roi, 
+.ms-table-state, 
+.ms-table-actions{
+    text-align: center;
+
 }
 
-.card-body:nth-child(1n + 8){
-    border-bottom: 0.5px solid #dee2e6;
+tbody .ms-table-name, 
+tbody .ms-table-date, 
+tbody .ms-table-roi, 
+tbody .ms-table-state, 
+tbody .ms-table-actions{
+    vertical-align: 69px;
 }
 
-.ms-dashboard__bottom .card-body:last-of-type{
-    margin-bottom: 30px;
+.ms-table-name{
+    width: 40%;
 }
-
-.ms-dashboard__bottom img{
-    width: 100%;
+.ms-table-date{
+    width: 20%;
+}
+tbody .ms-table-roi, 
+tbody .ms-table-state, 
+tbody .ms-table-actions{
+    width: calc(40% / 3);
 }
 
 /*---------------
