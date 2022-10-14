@@ -2,10 +2,11 @@
     ASIDE
 --------------------*/
 .ms-aside-icon button:hover{
-    /* background-color: rgba(192, 192, 192, 0.4); */
-    background: rgb(218,218,218);
-    background: radial-gradient(circle, rgba(218,218,218,1) 0%, rgba(8,19,161,1) 100%);
-    transition: all 2s;
+    background: hsla(212, 35%, 58%, 1);
+    background: linear-gradient(90deg, hsla(212, 35%, 58%, 1) 0%, hsla(218, 32%, 80%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(212, 35%, 58%, 1) 0%, hsla(218, 32%, 80%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(212, 35%, 58%, 1) 0%, hsla(218, 32%, 80%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#6D90B9", endColorstr="#BBC7DC", GradientType=1 );
 }
 
 /*------------------
