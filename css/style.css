@@ -153,9 +153,7 @@ tbody .ms-table-actions{
     width: calc(40% / 3);
 }
 
-/*---------------
-    DEBUG 
-----------------*/
+
 @media screen and (min-width: 450px) {
     /* creata media query provvisoria solo per
     avere il breakpoint su ispeziona sito */

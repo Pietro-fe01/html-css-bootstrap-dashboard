@@ -18,8 +18,16 @@ MAIN DASHBOARD TOP
 }
 
 /*----------------------
-MAIN DASHBOARD TOBOTTOM
+MAIN DASHBOARD BOTTOM
 -----------------------*/
 .ms-dashboard__bottom .ms-add-classes:hover{
     background-color: rgba(10, 10, 255, 0.2);
+}
+
+table tbody tr .ms-table-actions button:hover .fa-pencil{
+    background-color: rgba(0, 255, 0, 0.5);
+}
+
+table tbody tr .ms-table-actions button:hover .fa-trash{
+    background-color: rgba(255, 0, 0, 0.5);
 }
