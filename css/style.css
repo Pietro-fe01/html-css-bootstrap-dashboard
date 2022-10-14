@@ -63,8 +63,8 @@ aside{
     background-image: url("../img/sidebar-bg.png");
 }
 
-aside .ms-aside-icon button{
-
+.ms-aside-icon button{
+    width: 100px;
 }
 
 @media screen and (min-width: 992px) {
