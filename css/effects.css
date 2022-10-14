@@ -16,3 +16,10 @@ MAIN DASHBOARD TOP
     background-color: rgba(0, 0, 0, 0.2);
     cursor: pointer;
 }
+
+/*----------------------
+MAIN DASHBOARD TOBOTTOM
+-----------------------*/
+.ms-dashboard__bottom .ms-add-classes:hover{
+    background-color: rgba(10, 10, 255, 0.2);
+}
