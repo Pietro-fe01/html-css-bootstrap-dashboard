@@ -151,9 +151,9 @@
             <!-- DASHBOARD -->
             <main class="ms-dashboard text-white">
                 <!-- Dashboard top - blue -->
-                <div class="ms-dashboard__top row m-0 pt-4 pb-2 py-lg-3">
+                <div class="ms-dashboard__top row m-0 pt-4 pb-2 pt-lg-3">
                     <!-- prima colonna -->
-                    <div class="col-12 col-lg-8 mb-4">
+                    <div class="col-12 col-lg-8 mb-4 mb-lg-2">
                         <!-- Parte top della prima colonna -->
                         <div class="mb-2">
                             <h2 class="d-inline-block mb-1">Boolean</h2>
@@ -185,545 +185,549 @@
 
                 <!-- Dashboard bottom -->
                 <div class="ms-dashboard__bottom row m-0">
-                    <!-- Card numero uno -->
-                    <div class="col-12 col-lg-8 pt-3">
-                        <div class="card text-bg-light mb-3">
-                            <!-- Card header -->
-                            <div class="card-header fw-bold d-flex justify-content-between align-items-center">
-                                <span>Prossime classi</span>
-
-                                <!-- Pulsante "+" per aggiungere una classe -->
-                                <button class="ms-add-classes btn border-primary text-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                                    <i class="fa-solid fa-plus"></i>
-                                </button>
-                                <!-- Pulsante "+" per aggiungere una classe -->
-                            </div>
-
-                                <!-- Codice che apre la OffCanvas -->
-                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                                    <div class="offcanvas-header">
-                                        <h5 class="offcanvas-title" id="offcanvasRightLabel">
-                                            Aggiungi Classe
-                                        </h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                                    </div>
-                                    <div class="offcanvas-body">
-                                        <!-- primo input -->
-                                        <div class="mb-3">
-                                            <div class="pb-2">Nome</div>
-                                            <input type="text" placeholder="Classe ---" style="width: 100%;">
-                                        </div>
-                                        <!-- /primo input -->
-                                        
-                                        <!-- secondo input -->
-                                        <div class="mb-3">
-                                            <div class="pb-2">Data inizio</div>
-                                            <input type="date" style="width: 100%;">
-                                        </div>
-                                        <!-- /secondo input -->
-
-                                        <!-- I due bottoni -->
-                                        <div class="d-grid gap-2 d-md-block">
-                                            <button class="btn btn-primary" type="button">Salva</button>
-                                            <button class="btn btn-warning" type="button">Reset</button>
-                                        </div>
-                                        <!-- /I due bottoni -->
-                                    </div>
-                                </div>
-                                <!-- /Codice che apre la OffCanvas -->
-
-                            <!-- /Card header -->
-
-                            <!-- Contenuto card uno -->
-                            <div class="card-body row">
-                                <!-- Nome -->
-                                <div class="col-6 col-md-4 ps-4">
-                                    <span>Nome</span>
-                                </div>
-                                <!-- /Nome -->
-
-                                <!-- Data inizio -->
-                                <div class="d-none d-md-block col-md-2">
-                                    <span>Data inizio</span>
-                                </div>
-                                <!-- /Data inizio -->
-
-                                <!-- ROI -->
-                                <div class="d-none d-sm-block col-sm-2">
-                                    <span>ROI</span>  
-                                </div>
-                                <!-- /ROI -->
-
-                                <!-- Stato -->
-                                <div class="col-3 col-sm-2">
-                                    <span>Stato</span>
-                                </div>
-                                <!-- /Stato -->
-
-                                <!-- Azioni -->
-                                <div class="col-3 col-sm-2">
-                                    <span>Azioni</span> 
-                                </div>
-                                <!-- /Azioni -->
-                            </div>
-                            <!-- Contenuto card uno -->
-
-                            <!-- Riga Uno della card "Prossime classi" -->
-                            <div class="card-body row p-0 m-0 mx-3">
-                                <!-- Qui andranno tutti gli elementi del nome -->
-                                <div class="col-6 col-md-4 ms-dash-element align-self-center py-2">
-                                    <img src="img/class-avatar.jpg" alt="img-nome-classe">
-                                    <span class="ms-1">Classe 75</span>
-                                </div>
-                                <!-- /Qui andranno gli elementi del nome -->
-
-                                <!-- Qui andranno gli elementi della data di inizio-->
-                                <div class="d-none d-md-block col-md-2 ms-dash-element align-self-center p-0">
-                                    <span>15 Feb 2022</span>
-                                </div>
-                                <!-- /Qui andranno gli elementi della data di inizio -->
-
-                                <!-- Qui andranno gli elementi del ROI-->
-                                <div class="d-none d-sm-block col-sm-2 ms-dash-element align-self-center">
-                                    <span>20%</span>
-                                </div>
-                                <!-- /Qui andranno gli elementi del ROI -->
-
-                                <!-- Qui andranno gli elementi dello stato-->
-                                <div class="col-3 col-sm-2 ms-dash-element align-self-center">
-                                    <span class="badge text-bg-success">done</span>
-                                </div>
-                                <!-- /Qui andranno gli elementi dello stato -->
-
-                                <!-- Qui andranno gli elementi delle azioni-->
-                                <div class="col-3 col-sm-2 ms-dash-element align-self-center p-2 p-sm-1 p-md-2">
-                                    <button class="btn m-0 p-0">
-                                        <i class="fa-solid fa-pencil"></i>
-                                    </button>
-                                    <button class="btn m-0 p-0">
-                                        <i class="fa-solid fa-trash"></i>
-                                    </button>
-                                </div>
-                                <!-- /Qui andranno gli elementi delle azioni -->
-                            </div>
-                            <!-- /Riga Uno della card "Prossime classi" -->
-
-                            <!-- Riga due della card "Prossime classi" -->
-                            <div class="card-body row p-0 m-0 mx-3">
-                                <!-- Qui andranno tutti gli elementi del nome -->
-                                <div class="col-6 col-md-4 ms-dash-element align-self-center py-2">
-                                    <img src="img/class-avatar.jpg" alt="img-nome-classe">
-                                    <span class="ms-1">Classe 76</span>
-                                </div>
-                                <!-- /Qui andranno gli elementi del nome -->
-
-                                <!-- Qui andranno gli elementi della data di inizio-->
-                                <div class="d-none d-md-block col-md-2 ms-dash-element align-self-center p-0">
-                                    <span>16 Feb 2022</span>
-                                </div>
-                                <!-- /Qui andranno gli elementi della data di inizio -->
-
-                                <!-- Qui andranno gli elementi del ROI-->
-                                <div class="d-none d-sm-block col-sm-2 ms-dash-element align-self-center">
-                                    <span>20%</span>
-                                </div>
-                                <!-- /Qui andranno gli elementi del ROI -->
-
-                                <!-- Qui andranno gli elementi dello stato-->
-                                <div class="col-3 col-sm-2 ms-dash-element align-self-center">
-                                    <span class="badge text-bg-success">done</span>
-                                </div>
-                                <!-- /Qui andranno gli elementi dello stato -->
-
-                                <!-- Qui andranno gli elementi delle azioni-->
-                                <div class="col-3 col-sm-2 ms-dash-element align-self-center p-2 p-sm-1 p-md-2">
-                                    <button class="btn m-0 p-0">
-                                        <i class="fa-solid fa-pencil"></i>
-                                    </button>
-                                    <button class="btn m-0 p-0">
-                                        <i class="fa-solid fa-trash"></i>
-                                    </button>
-                                </div>
-                                <!-- /Qui andranno gli elementi delle azioni -->
-                            </div>
-                            <!-- /Riga due della card "Prossime classi" -->
-
-                            <!-- Riga tre della card "Prossime classi" -->
-                            <div class="card-body row p-0 m-0 mx-3">
-                                <!-- Qui andranno tutti gli elementi del nome -->
-                                <div class="col-6 col-md-4 ms-dash-element align-self-center py-2">
-                                    <img src="img/class-avatar.jpg" alt="img-nome-classe">
-                                    <span class="ms-1">Classe 77</span>
-                                </div>
-                                <!-- /Qui andranno gli elementi del nome -->
-
-                                <!-- Qui andranno gli elementi della data di inizio-->
-                                <div class="d-none d-md-block col-md-2 ms-dash-element align-self-center p-0">
-                                    <span>17 Feb 2022</span>
-                                </div>
-                                <!-- /Qui andranno gli elementi della data di inizio -->
-
-                                <!-- Qui andranno gli elementi del ROI-->
-                                <div class="d-none d-sm-block col-sm-2 ms-dash-element align-self-center">
-                                    <span>20%</span>
-                                </div>
-                                <!-- /Qui andranno gli elementi del ROI -->
-
-                                <!-- Qui andranno gli elementi dello stato-->
-                                <div class="col-3 col-sm-2 ms-dash-element align-self-center">
-                                    <span class="badge text-bg-warning">process</span>
-                                </div>
-                                <!-- /Qui andranno gli elementi dello stato -->
-
-                                <!-- Qui andranno gli elementi delle azioni-->
-                                <div class="col-3 col-sm-2 ms-dash-element align-self-center p-2 p-sm-1 p-md-2">
-                                    <button class="btn m-0 p-0">
-                                        <i class="fa-solid fa-pencil"></i>
-                                    </button>
-                                    <button class="btn m-0 p-0">
-                                        <i class="fa-solid fa-trash"></i>
-                                    </button>
-                                </div>
-                                <!-- /Qui andranno gli elementi delle azioni -->
-                            </div>
-                            <!-- /Riga tre della card "Prossime classi" -->
-
-                            <!-- Riga quattro della card "Prossime classi" -->
-                            <div class="card-body row p-0 m-0 mx-3">
-                                <!-- Qui andranno tutti gli elementi del nome -->
-                                <div class="col-6 col-md-4 ms-dash-element align-self-center py-2">
-                                    <img src="img/class-avatar.jpg" alt="img-nome-classe">
-                                    <span class="ms-1">Classe 78</span>
-                                </div>
-                                <!-- /Qui andranno gli elementi del nome -->
-
-                                <!-- Qui andranno gli elementi della data di inizio-->
-                                <div class="d-none d-md-block col-md-2 ms-dash-element align-self-center p-0">
-                                    <span>18 Feb 2022</span>
-                                </div>
-                                <!-- /Qui andranno gli elementi della data di inizio -->
-
-                                <!-- Qui andranno gli elementi del ROI-->
-                                <div class="d-none d-sm-block col-sm-2 ms-dash-element align-self-center">
-                                    <span>20%</span>
-                                </div>
-                                <!-- /Qui andranno gli elementi del ROI -->
-
-                                <!-- Qui andranno gli elementi dello stato-->
-                                <div class="col-3 col-sm-2 ms-dash-element align-self-center">
-                                    <span class="badge text-bg-success">done</span>
-                                </div>
-                                <!-- /Qui andranno gli elementi dello stato -->
-
-                                <!-- Qui andranno gli elementi delle azioni-->
-                                <div class="col-3 col-sm-2 ms-dash-element align-self-center p-2 p-sm-1 p-md-2">
-                                    <button class="btn m-0 p-0">
-                                        <i class="fa-solid fa-pencil"></i>
-                                    </button>
-                                    <button class="btn m-0 p-0">
-                                        <i class="fa-solid fa-trash"></i>
-                                    </button>
-                                </div>
-                                <!-- /Qui andranno gli elementi delle azioni -->
-                            </div>
-                            <!-- /Riga quattro della card "Prossime classi" -->
-
-                            <!-- Riga cinque della card "Prossime classi" -->
-                            <div class="card-body row p-0 m-0 mx-3">
-                                <!-- Qui andranno tutti gli elementi del nome -->
-                                <div class="col-6 col-md-4 ms-dash-element align-self-center py-2">
-                                    <img src="img/class-avatar.jpg" alt="img-nome-classe">
-                                    <span class="ms-1">Classe 79</span>
-                                </div>
-                                <!-- /Qui andranno gli elementi del nome -->
-
-                                <!-- Qui andranno gli elementi della data di inizio-->
-                                <div class="d-none d-md-block col-md-2 ms-dash-element align-self-center p-0">
-                                    <span>19 Feb 2022</span>
-                                </div>
-                                <!-- /Qui andranno gli elementi della data di inizio -->
-
-                                <!-- Qui andranno gli elementi del ROI-->
-                                <div class="d-none d-sm-block col-sm-2 ms-dash-element align-self-center">
-                                    <span>20%</span>
-                                </div>
-                                <!-- /Qui andranno gli elementi del ROI -->
-
-                                <!-- Qui andranno gli elementi dello stato-->
-                                <div class="col-3 col-sm-2 ms-dash-element align-self-center">
-                                    <span class="badge text-bg-danger">failed</span>
-                                </div>
-                                <!-- /Qui andranno gli elementi dello stato -->
-
-                                <!-- Qui andranno gli elementi delle azioni-->
-                                <div class="col-3 col-sm-2 ms-dash-element align-self-center p-2 p-sm-1 p-md-2">
-                                    <button class="btn m-0 p-0">
-                                        <i class="fa-solid fa-pencil"></i>
-                                    </button>
-                                    <button class="btn m-0 p-0">
-                                        <i class="fa-solid fa-trash"></i>
-                                    </button>
-                                </div>
-                                <!-- /Qui andranno gli elementi delle azioni -->
-                            </div>
-                            <!-- /Riga cinque della card "Prossime classi" -->
-
-                            <!-- Riga sei della card "Prossime classi" -->
-                            <div class="card-body row p-0 mx-3">
-                                <!-- Qui andranno tutti gli elementi del nome -->
-                                <div class="col-6 col-md-4 ms-dash-element align-self-center py-2">
-                                    <img src="img/class-avatar.jpg" alt="img-nome-classe">
-                                    <span class="ms-1">Classe 80</span>
-                                </div>
-                                <!-- /Qui andranno gli elementi del nome -->
-
-                                <!-- Qui andranno gli elementi della data di inizio-->
-                                <div class="d-none d-md-block col-md-2 ms-dash-element align-self-center p-0">
-                                    <span>20 Feb 2022</span>
-                                </div>
-                                <!-- /Qui andranno gli elementi della data di inizio -->
-
-                                <!-- Qui andranno gli elementi del ROI-->
-                                <div class="d-none d-sm-block col-sm-2 ms-dash-element align-self-center">
-                                    <span>20%</span>
-                                </div>
-                                <!-- /Qui andranno gli elementi del ROI -->
-
-                                <!-- Qui andranno gli elementi dello stato-->
-                                <div class="col-3 col-sm-2 ms-dash-element align-self-center">
-                                    <span class="badge text-bg-success">done</span>
-                                </div>
-                                <!-- /Qui andranno gli elementi dello stato -->
-
-                                <!-- Qui andranno gli elementi delle azioni-->
-                                <div class="col-3 col-sm-2 ms-dash-element align-self-center p-2 p-sm-1 p-md-2">
-                                    <button class="btn m-0 p-0">
-                                        <i class="fa-solid fa-pencil"></i>
-                                    </button>
-                                    <button class="btn m-0 p-0">
-                                        <i class="fa-solid fa-trash"></i>
-                                    </button>
-                                </div>
-                                <!-- /Qui andranno gli elementi delle azioni -->
-                            </div>
-                            <!-- /Riga sei della card "Prossime classi" -->
-
-                            <!-- Riga sette della card "Prossime classi" -->
-                            <div class="card-body row p-0 mx-3">
-                                <!-- Qui andranno tutti gli elementi del nome -->
-                                <div class="col-6 col-md-4 ms-dash-element align-self-center py-2">
-                                    <img src="img/class-avatar.jpg" alt="img-nome-classe">
-                                    <span class="ms-1">Classe 81</span>
-                                </div>
-                                <!-- /Qui andranno gli elementi del nome -->
-
-                                <!-- Qui andranno gli elementi della data di inizio-->
-                                <div class="d-none d-md-block col-md-2 ms-dash-element align-self-center p-0">
-                                    <span>21 Feb 2022</span>
-                                </div>
-                                <!-- /Qui andranno gli elementi della data di inizio -->
-
-                                <!-- Qui andranno gli elementi del ROI-->
-                                <div class="d-none d-sm-block col-sm-2 ms-dash-element align-self-center">
-                                    <span>20%</span>
-                                </div>
-                                <!-- /Qui andranno gli elementi del ROI -->
-
-                                <!-- Qui andranno gli elementi dello stato-->
-                                <div class="col-3 col-sm-2 ms-dash-element align-self-center">
-                                    <span class="badge text-bg-danger">failed</span>
-                                </div>
-                                <!-- /Qui andranno gli elementi dello stato -->
-
-                                <!-- Qui andranno gli elementi delle azioni-->
-                                <div class="col-3 col-sm-2 ms-dash-element align-self-center p-2 p-sm-1 p-md-2">
-                                    <button class="btn m-0 p-0">
-                                        <i class="fa-solid fa-pencil"></i>
-                                    </button>
-                                    <button class="btn m-0 p-0">
-                                        <i class="fa-solid fa-trash"></i>
-                                    </button>
-                                </div>
-                                <!-- /Qui andranno gli elementi delle azioni -->
-                            </div>
-                            <!-- /Riga sette della card "Prossime classi" -->
-
-                            <!-- Riga otto della card "Prossime classi" -->
-                            <div class="card-body row p-0 mx-3">
-                                <!-- Qui andranno tutti gli elementi del nome -->
-                                <div class="col-6 col-md-4 ms-dash-element align-self-center py-2">
-                                    <img src="img/class-avatar.jpg" alt="img-nome-classe">
-                                    <span class="ms-1">Classe 82</span>
-                                </div>
-                                <!-- /Qui andranno gli elementi del nome -->
-
-                                <!-- Qui andranno gli elementi della data di inizio-->
-                                <div class="d-none d-md-block col-md-2 ms-dash-element align-self-center p-0">
-                                    <span>22 Feb 2022</span>
-                                </div>
-                                <!-- /Qui andranno gli elementi della data di inizio -->
-
-                                <!-- Qui andranno gli elementi del ROI-->
-                                <div class="d-none d-sm-block col-sm-2 ms-dash-element align-self-center">
-                                    <span>20%</span>
-                                </div>
-                                <!-- /Qui andranno gli elementi del ROI -->
-
-                                <!-- Qui andranno gli elementi dello stato-->
-                                <div class="col-3 col-sm-2 ms-dash-element align-self-center">
-                                    <span class="badge text-bg-success">done</span>
-                                </div>
-                                <!-- /Qui andranno gli elementi dello stato -->
-
-                                <!-- Qui andranno gli elementi delle azioni-->
-                                <div class="col-3 col-sm-2 ms-dash-element align-self-center p-2 p-sm-1 p-md-2">
-                                    <button class="btn m-0 p-0">
-                                        <i class="fa-solid fa-pencil"></i>
-                                    </button>
-                                    <button class="btn m-0 p-0">
-                                        <i class="fa-solid fa-trash"></i>
-                                    </button>
-                                </div>
-                                <!-- /Qui andranno gli elementi delle azioni -->
-                            </div>
-                            <!-- /Riga otto della card "Prossime classi" -->
-                        </div>
-                    </div>
-                    <!-- /Card numero uno -->
-
-                    <!-- Card numero due -->
-                    <div class="col-12 col-lg-4 py-3">
-                        <div class="card text-bg-light mb-3">
-                            <!-- Card header -->
-                            <div class="card-header fw-bold">Todo</div>
-                            <!-- Card header -->
-
-                            <div class="card-body mb-0">
-                                <div class="card">
-                                    <ul class="list-group list-group-flush">
-                                        <!-- Checkbox numero uno -->
-                                        <li class="list-group-item">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                <label class="form-check-label" for="flexCheckDefault">
-                                                    <span>Kickoff nuove classi</span>
-                                                </label>
-                                            </div>
-                                        </li>
-                                        <!-- /Checkbox numero uno -->
-                                        
-                                        <!-- Checkbox numero due -->
-                                        <li class="list-group-item">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault due">
-                                                <label class="form-check-label" for="flexCheckDefault due">
-                                                    <span>Lezione su Bootstrap 5 in classe #76</span>
-                                                </label>
-                                            </div>
-                                        </li>
-                                        <!-- /Checkbox numero due -->
-
-                                        <!-- Checkbox numero tre -->
-                                        <li class="list-group-item">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault tre">
-                                                <label class="form-check-label" for="flexCheckDefault tre">
-                                                    <span>Controllare username github studenti</span>
-                                                </label>
-                                            </div>
-                                        </li>
-                                        <!-- /Checkbox numero tre -->
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /Card numero due -->
-
-                    <!-- Card numero tre -->
                     <div class="col-12 col-lg-8">
-                        <div class="card text-bg-light mb-3">
-                            <!-- Card header -->
-                            <div class="card-header fw-bold">F.A.Q.</div>
-                            <!-- Card header -->
+                        <!-- Card numero uno -->
+                        <div class="col-12 pt-3">
+                            <div class="card text-bg-light mb-3">
+                                <!-- Card header -->
+                                <div class="card-header fw-bold d-flex justify-content-between align-items-center">
+                                    <span>Prossime classi</span>
 
-                            <div class="card-body mb-0">
-                                <div class="accordion accordion-flush" id="accordionFlushExample">
-                                    <!-- FAQ numero 1 -->
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="flush-headingOne">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                                Come aggiungere una nuova classe?
-                                            </button>
-                                        </h2>
-                                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                            <div class="accordion-body">Clicca sul + in alto a destra della tabella "Prossime classi"</div>
+                                    <!-- Pulsante "+" per aggiungere una classe -->
+                                    <button class="ms-add-classes btn border-primary text-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </button>
+                                    <!-- Pulsante "+" per aggiungere una classe -->
+                                </div>
+
+                                    <!-- Codice che apre la OffCanvas -->
+                                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="offcanvasRightLabel">
+                                                Aggiungi Classe
+                                            </h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <!-- primo input -->
+                                            <div class="mb-3">
+                                                <div class="pb-2">Nome</div>
+                                                <input type="text" placeholder="Classe ---" style="width: 100%;">
+                                            </div>
+                                            <!-- /primo input -->
+                                            
+                                            <!-- secondo input -->
+                                            <div class="mb-3">
+                                                <div class="pb-2">Data inizio</div>
+                                                <input type="date" style="width: 100%;">
+                                            </div>
+                                            <!-- /secondo input -->
+
+                                            <!-- I due bottoni -->
+                                            <div class="d-grid gap-2 d-md-block">
+                                                <button class="btn btn-primary" type="button">Salva</button>
+                                                <button class="btn btn-warning" type="button">Reset</button>
+                                            </div>
+                                            <!-- /I due bottoni -->
                                         </div>
                                     </div>
-                                    <!-- /FAQ numero 1 -->
+                                    <!-- /Codice che apre la OffCanvas -->
 
-                                    <!-- FAQ numero 2 -->
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="flush-headingTwo">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                                Come posso accedere alle informazioni del mio account?
-                                            </button>
-                                        </h2>
-                                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                                            <div class="accordion-body">faq 2</div>
-                                        </div>
-                                    </div>
-                                    <!-- /FAQ numero 2 -->
+                                <!-- /Card header -->
 
-                                    <!-- FAQ numero 3 -->
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="flush-headingThree">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                                Posso usare questa dashboard da mobile?
-                                            </button>
-                                        </h2>
-                                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                                            <div class="accordion-body">faq 3</div>
-                                        </div>
+                                <!-- Contenuto card uno -->
+                                <div class="card-body row">
+                                    <!-- Nome -->
+                                    <div class="col-6 col-md-4 ps-4">
+                                        <span>Nome</span>
                                     </div>
-                                    <!-- /FAQ numero 3 -->
+                                    <!-- /Nome -->
+
+                                    <!-- Data inizio -->
+                                    <div class="d-none d-md-block col-md-2">
+                                        <span>Data inizio</span>
+                                    </div>
+                                    <!-- /Data inizio -->
+
+                                    <!-- ROI -->
+                                    <div class="d-none d-sm-block col-sm-2">
+                                        <span>ROI</span>  
+                                    </div>
+                                    <!-- /ROI -->
+
+                                    <!-- Stato -->
+                                    <div class="col-3 col-sm-2">
+                                        <span>Stato</span>
+                                    </div>
+                                    <!-- /Stato -->
+
+                                    <!-- Azioni -->
+                                    <div class="col-3 col-sm-2">
+                                        <span>Azioni</span> 
+                                    </div>
+                                    <!-- /Azioni -->
+                                </div>
+                                <!-- Contenuto card uno -->
+
+                                <!-- Riga Uno della card "Prossime classi" -->
+                                <div class="card-body row p-0 m-0 mx-3">
+                                    <!-- Qui andranno tutti gli elementi del nome -->
+                                    <div class="col-6 col-md-4 ms-dash-element align-self-center py-2">
+                                        <img src="img/class-avatar.jpg" alt="img-nome-classe">
+                                        <span class="ms-1">Classe 75</span>
+                                    </div>
+                                    <!-- /Qui andranno gli elementi del nome -->
+
+                                    <!-- Qui andranno gli elementi della data di inizio-->
+                                    <div class="d-none d-md-block col-md-2 ms-dash-element align-self-center p-0">
+                                        <span>15 Feb 2022</span>
+                                    </div>
+                                    <!-- /Qui andranno gli elementi della data di inizio -->
+
+                                    <!-- Qui andranno gli elementi del ROI-->
+                                    <div class="d-none d-sm-block col-sm-2 ms-dash-element align-self-center">
+                                        <span>20%</span>
+                                    </div>
+                                    <!-- /Qui andranno gli elementi del ROI -->
+
+                                    <!-- Qui andranno gli elementi dello stato-->
+                                    <div class="col-3 col-sm-2 ms-dash-element align-self-center">
+                                        <span class="badge text-bg-success">done</span>
+                                    </div>
+                                    <!-- /Qui andranno gli elementi dello stato -->
+
+                                    <!-- Qui andranno gli elementi delle azioni-->
+                                    <div class="col-3 col-sm-2 ms-dash-element align-self-center p-2 p-sm-1 p-md-2">
+                                        <button class="btn m-0 p-0">
+                                            <i class="fa-solid fa-pencil"></i>
+                                        </button>
+                                        <button class="btn m-0 p-0">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </button>
+                                    </div>
+                                    <!-- /Qui andranno gli elementi delle azioni -->
+                                </div>
+                                <!-- /Riga Uno della card "Prossime classi" -->
+
+                                <!-- Riga due della card "Prossime classi" -->
+                                <div class="card-body row p-0 m-0 mx-3">
+                                    <!-- Qui andranno tutti gli elementi del nome -->
+                                    <div class="col-6 col-md-4 ms-dash-element align-self-center py-2">
+                                        <img src="img/class-avatar.jpg" alt="img-nome-classe">
+                                        <span class="ms-1">Classe 76</span>
+                                    </div>
+                                    <!-- /Qui andranno gli elementi del nome -->
+
+                                    <!-- Qui andranno gli elementi della data di inizio-->
+                                    <div class="d-none d-md-block col-md-2 ms-dash-element align-self-center p-0">
+                                        <span>16 Feb 2022</span>
+                                    </div>
+                                    <!-- /Qui andranno gli elementi della data di inizio -->
+
+                                    <!-- Qui andranno gli elementi del ROI-->
+                                    <div class="d-none d-sm-block col-sm-2 ms-dash-element align-self-center">
+                                        <span>20%</span>
+                                    </div>
+                                    <!-- /Qui andranno gli elementi del ROI -->
+
+                                    <!-- Qui andranno gli elementi dello stato-->
+                                    <div class="col-3 col-sm-2 ms-dash-element align-self-center">
+                                        <span class="badge text-bg-success">done</span>
+                                    </div>
+                                    <!-- /Qui andranno gli elementi dello stato -->
+
+                                    <!-- Qui andranno gli elementi delle azioni-->
+                                    <div class="col-3 col-sm-2 ms-dash-element align-self-center p-2 p-sm-1 p-md-2">
+                                        <button class="btn m-0 p-0">
+                                            <i class="fa-solid fa-pencil"></i>
+                                        </button>
+                                        <button class="btn m-0 p-0">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </button>
+                                    </div>
+                                    <!-- /Qui andranno gli elementi delle azioni -->
+                                </div>
+                                <!-- /Riga due della card "Prossime classi" -->
+
+                                <!-- Riga tre della card "Prossime classi" -->
+                                <div class="card-body row p-0 m-0 mx-3">
+                                    <!-- Qui andranno tutti gli elementi del nome -->
+                                    <div class="col-6 col-md-4 ms-dash-element align-self-center py-2">
+                                        <img src="img/class-avatar.jpg" alt="img-nome-classe">
+                                        <span class="ms-1">Classe 77</span>
+                                    </div>
+                                    <!-- /Qui andranno gli elementi del nome -->
+
+                                    <!-- Qui andranno gli elementi della data di inizio-->
+                                    <div class="d-none d-md-block col-md-2 ms-dash-element align-self-center p-0">
+                                        <span>17 Feb 2022</span>
+                                    </div>
+                                    <!-- /Qui andranno gli elementi della data di inizio -->
+
+                                    <!-- Qui andranno gli elementi del ROI-->
+                                    <div class="d-none d-sm-block col-sm-2 ms-dash-element align-self-center">
+                                        <span>20%</span>
+                                    </div>
+                                    <!-- /Qui andranno gli elementi del ROI -->
+
+                                    <!-- Qui andranno gli elementi dello stato-->
+                                    <div class="col-3 col-sm-2 ms-dash-element align-self-center">
+                                        <span class="badge text-bg-warning">process</span>
+                                    </div>
+                                    <!-- /Qui andranno gli elementi dello stato -->
+
+                                    <!-- Qui andranno gli elementi delle azioni-->
+                                    <div class="col-3 col-sm-2 ms-dash-element align-self-center p-2 p-sm-1 p-md-2">
+                                        <button class="btn m-0 p-0">
+                                            <i class="fa-solid fa-pencil"></i>
+                                        </button>
+                                        <button class="btn m-0 p-0">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </button>
+                                    </div>
+                                    <!-- /Qui andranno gli elementi delle azioni -->
+                                </div>
+                                <!-- /Riga tre della card "Prossime classi" -->
+
+                                <!-- Riga quattro della card "Prossime classi" -->
+                                <div class="card-body row p-0 m-0 mx-3">
+                                    <!-- Qui andranno tutti gli elementi del nome -->
+                                    <div class="col-6 col-md-4 ms-dash-element align-self-center py-2">
+                                        <img src="img/class-avatar.jpg" alt="img-nome-classe">
+                                        <span class="ms-1">Classe 78</span>
+                                    </div>
+                                    <!-- /Qui andranno gli elementi del nome -->
+
+                                    <!-- Qui andranno gli elementi della data di inizio-->
+                                    <div class="d-none d-md-block col-md-2 ms-dash-element align-self-center p-0">
+                                        <span>18 Feb 2022</span>
+                                    </div>
+                                    <!-- /Qui andranno gli elementi della data di inizio -->
+
+                                    <!-- Qui andranno gli elementi del ROI-->
+                                    <div class="d-none d-sm-block col-sm-2 ms-dash-element align-self-center">
+                                        <span>20%</span>
+                                    </div>
+                                    <!-- /Qui andranno gli elementi del ROI -->
+
+                                    <!-- Qui andranno gli elementi dello stato-->
+                                    <div class="col-3 col-sm-2 ms-dash-element align-self-center">
+                                        <span class="badge text-bg-success">done</span>
+                                    </div>
+                                    <!-- /Qui andranno gli elementi dello stato -->
+
+                                    <!-- Qui andranno gli elementi delle azioni-->
+                                    <div class="col-3 col-sm-2 ms-dash-element align-self-center p-2 p-sm-1 p-md-2">
+                                        <button class="btn m-0 p-0">
+                                            <i class="fa-solid fa-pencil"></i>
+                                        </button>
+                                        <button class="btn m-0 p-0">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </button>
+                                    </div>
+                                    <!-- /Qui andranno gli elementi delle azioni -->
+                                </div>
+                                <!-- /Riga quattro della card "Prossime classi" -->
+
+                                <!-- Riga cinque della card "Prossime classi" -->
+                                <div class="card-body row p-0 m-0 mx-3">
+                                    <!-- Qui andranno tutti gli elementi del nome -->
+                                    <div class="col-6 col-md-4 ms-dash-element align-self-center py-2">
+                                        <img src="img/class-avatar.jpg" alt="img-nome-classe">
+                                        <span class="ms-1">Classe 79</span>
+                                    </div>
+                                    <!-- /Qui andranno gli elementi del nome -->
+
+                                    <!-- Qui andranno gli elementi della data di inizio-->
+                                    <div class="d-none d-md-block col-md-2 ms-dash-element align-self-center p-0">
+                                        <span>19 Feb 2022</span>
+                                    </div>
+                                    <!-- /Qui andranno gli elementi della data di inizio -->
+
+                                    <!-- Qui andranno gli elementi del ROI-->
+                                    <div class="d-none d-sm-block col-sm-2 ms-dash-element align-self-center">
+                                        <span>20%</span>
+                                    </div>
+                                    <!-- /Qui andranno gli elementi del ROI -->
+
+                                    <!-- Qui andranno gli elementi dello stato-->
+                                    <div class="col-3 col-sm-2 ms-dash-element align-self-center">
+                                        <span class="badge text-bg-danger">failed</span>
+                                    </div>
+                                    <!-- /Qui andranno gli elementi dello stato -->
+
+                                    <!-- Qui andranno gli elementi delle azioni-->
+                                    <div class="col-3 col-sm-2 ms-dash-element align-self-center p-2 p-sm-1 p-md-2">
+                                        <button class="btn m-0 p-0">
+                                            <i class="fa-solid fa-pencil"></i>
+                                        </button>
+                                        <button class="btn m-0 p-0">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </button>
+                                    </div>
+                                    <!-- /Qui andranno gli elementi delle azioni -->
+                                </div>
+                                <!-- /Riga cinque della card "Prossime classi" -->
+
+                                <!-- Riga sei della card "Prossime classi" -->
+                                <div class="card-body row p-0 mx-3">
+                                    <!-- Qui andranno tutti gli elementi del nome -->
+                                    <div class="col-6 col-md-4 ms-dash-element align-self-center py-2">
+                                        <img src="img/class-avatar.jpg" alt="img-nome-classe">
+                                        <span class="ms-1">Classe 80</span>
+                                    </div>
+                                    <!-- /Qui andranno gli elementi del nome -->
+
+                                    <!-- Qui andranno gli elementi della data di inizio-->
+                                    <div class="d-none d-md-block col-md-2 ms-dash-element align-self-center p-0">
+                                        <span>20 Feb 2022</span>
+                                    </div>
+                                    <!-- /Qui andranno gli elementi della data di inizio -->
+
+                                    <!-- Qui andranno gli elementi del ROI-->
+                                    <div class="d-none d-sm-block col-sm-2 ms-dash-element align-self-center">
+                                        <span>20%</span>
+                                    </div>
+                                    <!-- /Qui andranno gli elementi del ROI -->
+
+                                    <!-- Qui andranno gli elementi dello stato-->
+                                    <div class="col-3 col-sm-2 ms-dash-element align-self-center">
+                                        <span class="badge text-bg-success">done</span>
+                                    </div>
+                                    <!-- /Qui andranno gli elementi dello stato -->
+
+                                    <!-- Qui andranno gli elementi delle azioni-->
+                                    <div class="col-3 col-sm-2 ms-dash-element align-self-center p-2 p-sm-1 p-md-2">
+                                        <button class="btn m-0 p-0">
+                                            <i class="fa-solid fa-pencil"></i>
+                                        </button>
+                                        <button class="btn m-0 p-0">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </button>
+                                    </div>
+                                    <!-- /Qui andranno gli elementi delle azioni -->
+                                </div>
+                                <!-- /Riga sei della card "Prossime classi" -->
+
+                                <!-- Riga sette della card "Prossime classi" -->
+                                <div class="card-body row p-0 mx-3">
+                                    <!-- Qui andranno tutti gli elementi del nome -->
+                                    <div class="col-6 col-md-4 ms-dash-element align-self-center py-2">
+                                        <img src="img/class-avatar.jpg" alt="img-nome-classe">
+                                        <span class="ms-1">Classe 81</span>
+                                    </div>
+                                    <!-- /Qui andranno gli elementi del nome -->
+
+                                    <!-- Qui andranno gli elementi della data di inizio-->
+                                    <div class="d-none d-md-block col-md-2 ms-dash-element align-self-center p-0">
+                                        <span>21 Feb 2022</span>
+                                    </div>
+                                    <!-- /Qui andranno gli elementi della data di inizio -->
+
+                                    <!-- Qui andranno gli elementi del ROI-->
+                                    <div class="d-none d-sm-block col-sm-2 ms-dash-element align-self-center">
+                                        <span>20%</span>
+                                    </div>
+                                    <!-- /Qui andranno gli elementi del ROI -->
+
+                                    <!-- Qui andranno gli elementi dello stato-->
+                                    <div class="col-3 col-sm-2 ms-dash-element align-self-center">
+                                        <span class="badge text-bg-danger">failed</span>
+                                    </div>
+                                    <!-- /Qui andranno gli elementi dello stato -->
+
+                                    <!-- Qui andranno gli elementi delle azioni-->
+                                    <div class="col-3 col-sm-2 ms-dash-element align-self-center p-2 p-sm-1 p-md-2">
+                                        <button class="btn m-0 p-0">
+                                            <i class="fa-solid fa-pencil"></i>
+                                        </button>
+                                        <button class="btn m-0 p-0">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </button>
+                                    </div>
+                                    <!-- /Qui andranno gli elementi delle azioni -->
+                                </div>
+                                <!-- /Riga sette della card "Prossime classi" -->
+
+                                <!-- Riga otto della card "Prossime classi" -->
+                                <div class="card-body row p-0 mx-3">
+                                    <!-- Qui andranno tutti gli elementi del nome -->
+                                    <div class="col-6 col-md-4 ms-dash-element align-self-center py-2">
+                                        <img src="img/class-avatar.jpg" alt="img-nome-classe">
+                                        <span class="ms-1">Classe 82</span>
+                                    </div>
+                                    <!-- /Qui andranno gli elementi del nome -->
+
+                                    <!-- Qui andranno gli elementi della data di inizio-->
+                                    <div class="d-none d-md-block col-md-2 ms-dash-element align-self-center p-0">
+                                        <span>22 Feb 2022</span>
+                                    </div>
+                                    <!-- /Qui andranno gli elementi della data di inizio -->
+
+                                    <!-- Qui andranno gli elementi del ROI-->
+                                    <div class="d-none d-sm-block col-sm-2 ms-dash-element align-self-center">
+                                        <span>20%</span>
+                                    </div>
+                                    <!-- /Qui andranno gli elementi del ROI -->
+
+                                    <!-- Qui andranno gli elementi dello stato-->
+                                    <div class="col-3 col-sm-2 ms-dash-element align-self-center">
+                                        <span class="badge text-bg-success">done</span>
+                                    </div>
+                                    <!-- /Qui andranno gli elementi dello stato -->
+
+                                    <!-- Qui andranno gli elementi delle azioni-->
+                                    <div class="col-3 col-sm-2 ms-dash-element align-self-center p-2 p-sm-1 p-md-2">
+                                        <button class="btn m-0 p-0">
+                                            <i class="fa-solid fa-pencil"></i>
+                                        </button>
+                                        <button class="btn m-0 p-0">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </button>
+                                    </div>
+                                    <!-- /Qui andranno gli elementi delle azioni -->
+                                </div>
+                                <!-- /Riga otto della card "Prossime classi" -->
+                            </div>
+                        </div>
+                        <!-- /Card numero uno -->
+
+                        <!-- Card numero due -->
+                        <div class="col-12">
+                            <div class="card text-bg-light mb-3">
+                                <!-- Card header -->
+                                <div class="card-header fw-bold">F.A.Q.</div>
+                                <!-- Card header -->
+
+                                <div class="card-body mb-0">
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                        <!-- FAQ numero 1 -->
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-headingOne">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                                    Come aggiungere una nuova classe?
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">Clicca sul + in alto a destra della tabella "Prossime classi"</div>
+                                            </div>
+                                        </div>
+                                        <!-- /FAQ numero 1 -->
+
+                                        <!-- FAQ numero 2 -->
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-headingTwo">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                    Come posso accedere alle informazioni del mio account?
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">faq 2</div>
+                                            </div>
+                                        </div>
+                                        <!-- /FAQ numero 2 -->
+
+                                        <!-- FAQ numero 3 -->
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-headingThree">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                                    Posso usare questa dashboard da mobile?
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">faq 3</div>
+                                            </div>
+                                        </div>
+                                        <!-- /FAQ numero 3 -->
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- /Card numero due -->
                     </div>
-                    <!-- /Card numero tre -->
 
-                    <!-- Card numero quattro -->
-                    <div class="col-12 col-lg-4 ms-grafico">
-                        <div class="card text-bg-light mb-3">
-                            <div class="card-body mb-0">
-                                <div class="card">
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item">
-                                            <!-- CHART JS -->
-                                            <canvas id="myChart" width="300" height="300"></canvas>
-                                            <!-- CHART JS -->
-                                            <h2 class="pt-3">Utenti attivi</h2>
-                                            <p>Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
-                                        </li>
-                                        <li class="list-group-item">
-                                            <span>Gennaio: 1200</span>
-                                        </li>
-                                        <li class="list-group-item">
-                                            <span>Febbraio: 800</span>
-                                        </li>
-                                        <li class="list-group-item">
-                                            <span>Marzo: 1500</span>
-                                        </li>
-                                        <li class="list-group-item">
-                                            <a href="#">Visualizza report approfondito</a>
-                                        </li>
-                                    </ul>
+                    <div class="col-12 col-lg-4">
+                        <!-- Card numero tre -->
+                        <div class="col-12 pt-3">
+                            <div class="card text-bg-light mb-3">
+                                <!-- Card header -->
+                                <div class="card-header fw-bold">Todo</div>
+                                <!-- Card header -->
+
+                                <div class="card-body mb-0">
+                                    <div class="card">
+                                        <ul class="list-group list-group-flush">
+                                            <!-- Checkbox numero uno -->
+                                            <li class="list-group-item">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        <span>Kickoff nuove classi</span>
+                                                    </label>
+                                                </div>
+                                            </li>
+                                            <!-- /Checkbox numero uno -->
+                                            
+                                            <!-- Checkbox numero due -->
+                                            <li class="list-group-item">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault due">
+                                                    <label class="form-check-label" for="flexCheckDefault due">
+                                                        <span>Lezione su Bootstrap 5 in classe #76</span>
+                                                    </label>
+                                                </div>
+                                            </li>
+                                            <!-- /Checkbox numero due -->
+
+                                            <!-- Checkbox numero tre -->
+                                            <li class="list-group-item">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault tre">
+                                                    <label class="form-check-label" for="flexCheckDefault tre">
+                                                        <span>Controllare username github studenti</span>
+                                                    </label>
+                                                </div>
+                                            </li>
+                                            <!-- /Checkbox numero tre -->
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- /Card numero tre -->
+
+                        <!-- Card numero quattro -->
+                        <div class="col-12 ms-grafico">
+                            <div class="card text-bg-light mb-3">
+                                <div class="card-body mb-0">
+                                    <div class="card">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">
+                                                <!-- CHART JS -->
+                                                <canvas id="myChart" width="300" height="300"></canvas>
+                                                <!-- CHART JS -->
+                                                <h2 class="pt-3">Utenti attivi</h2>
+                                                <p>Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span>Gennaio: 1200</span>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span>Febbraio: 800</span>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span>Marzo: 1500</span>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="#">Visualizza report approfondito</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Card numero quattro -->
                     </div>
-                    <!-- /Card numero quattro -->
                 </div>
                 <!-- /Dashboard bottom -->
             </main>

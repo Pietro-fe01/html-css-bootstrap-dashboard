@@ -145,25 +145,6 @@ MAIN DASHBOARD BOTTOM
     width: 100%;
 }
 
-@media screen and (min-width: 992px) {
-    .ms-grafico{
-        position: relative;
-        top: -275px;
-    }
-}
-@media screen and (min-width: 1157px) {
-    .ms-grafico{
-        position: relative;
-        top: -290px;
-    }
-}
-@media screen and (min-width: 1165px) {
-    .ms-grafico{
-        position: relative;
-        top: -310px;
-    }
-}
-
 /*---------------
     DEBUG 
 ----------------*/
