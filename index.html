@@ -40,10 +40,16 @@
 
                 <!-- Search bar  -->
                 <div class="ms-search-bar rounded ms-4 ms-lg-5 input-group">
-                    <span class="input-group-text px-2" id="search-addon" style="background-color: var(--ms-search-bg);">
-                        <i class="me-2 fas fa-search"></i>
-                        <input class="border-0" style="background-color: var(--ms-search-bg);" type="search" class="form-control rounded" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search" aria-describedby="search-addon" />
-                    </span>
+                    <form action="">
+                        <div class="p-1 bg-light rounded rounded-pill shadow-sm">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <button id="button-addon2" type="submit" class="btn btn-link text-warning"><i class="fa fa-search"></i></button>
+                                </div>
+                            <input type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-describedby="button-addon2" class="form-control border-0 bg-light">
+                            </div>
+                        </div>
+                    </form>
                 </div>
                 <!-- /Search bar  -->
 

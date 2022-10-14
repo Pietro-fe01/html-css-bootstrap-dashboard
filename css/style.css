@@ -30,10 +30,30 @@ header .ms-logo img{
     width: 3.125rem;
 }
 
-header .ms-search-bar span,
-header .ms-search-bar input {
+.ms-search-bar form{
     width: 100%;
+    border: 1px solid;
+    border-radius: 1.25rem;
 }
+
+.ms-search-bar form i{
+    color: blue;
+}
+
+.ms-search-bar form input::placeholder{
+    color: blue;
+}
+
+.form-control:focus {
+    box-shadow: none;
+  }
+  
+  .form-control-underlined {
+    border-width: 0;
+    border-bottom-width: 1px;
+    border-radius: 0;
+    padding-left: 0;
+  }
 
 header .ms-nav-icons{
     width: 3.125rem;
@@ -158,3 +178,4 @@ tbody .ms-table-actions{
     /* creata media query provvisoria solo per
     avere il breakpoint su ispeziona sito */
 }
+  
